@@ -25,4 +25,6 @@ interface Filmes {
 })
 export class HomeComponent {
   filmes: Filmes[] = dataFake;
+
+  selectSmallFilmClick() {}
 }

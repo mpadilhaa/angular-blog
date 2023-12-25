@@ -13,12 +13,13 @@ export class ContentComponent implements OnInit {
   photoCover: string = '';
   contentTitle: string = '';
   contentDescription: string = '';
-  private id: string | null = '';
+  id: string | null = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    this.setValueToComponent(this.id);
   }
 
   setValueToComponent(id: string | null) {
