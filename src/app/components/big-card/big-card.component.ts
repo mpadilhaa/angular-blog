@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { dataFake } from '../../../data/dataFake';
 
 @Component({
   selector: 'app-big-card',
@@ -18,5 +19,11 @@ export class BigCardComponent implements OnInit {
   @Input()
   id: string = '';
   constructor() {}
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+    this.photoCover = dataFake[0].photo;
+    this.cardTitle = dataFake[0].title;
+    this.cardDescription = dataFake[0].description;
+    this.id = dataFake[0].id;
+  }
 }

@@ -5,6 +5,12 @@ import { BigCardComponent } from '../../components/big-card/big-card.component';
 import { SmallCardComponent } from '../../components/small-card/small-card.component';
 import { dataFake } from '../../../data/dataFake';
 
+interface Filmes {
+  id: string;
+  photo: string;
+  title: string;
+  description: string;
+}
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -18,5 +24,5 @@ import { dataFake } from '../../../data/dataFake';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  filmes = dataFake;
+  filmes: Filmes[] = dataFake;
 }

@@ -1,9 +1,15 @@
 .menu-cards {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   margin-top: 40px;
   max-width: 950px;
   gap: clamp(1.563rem, 1.2rem + 1.548vw, 3.125rem);
+}
+
+.cards-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

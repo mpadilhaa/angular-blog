@@ -1,8 +1,9 @@
 .small-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   gap: 30px;
+  min-width: 280px;
   max-width: clamp(15.625rem, 12.723rem + 12.384vw, 28.125rem);
   padding-bottom: 20px;
   border-bottom: 1px solid #fff;
