@@ -1,3 +1,11 @@
-p {
-  color: white;
+.big-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: clamp(15.625rem, 12.723rem + 12.384vw, 28.125rem);
+  min-width: min-content;
+}
+
+.img-big-card img {
+  width: 100%;
 }

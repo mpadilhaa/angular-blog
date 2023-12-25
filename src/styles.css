@@ -9,3 +9,20 @@
   color: #fff;
   font-family: "Inter", sans-serif;
 }
+
+h1 {
+  font-size: clamp(3.75rem, 2.879rem + 3.715vw, 7.5rem);
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(0.875rem, 0.788rem + 0.372vw, 1.25rem);
+}
+
+span {
+  font-size: clamp(0.875rem, 0.817rem + 0.248vw, 1.125rem);
+}
+li,
+p {
+  font-size: clamp(0.75rem, 0.692rem + 0.248vw, 1rem);
+}

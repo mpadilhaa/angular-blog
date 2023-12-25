@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: clamp(1.25rem, 0.96rem + 1.238vw, 2.5rem) 0;
 }
 
 .menu-bar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: clamp(0.938rem, 0.72rem + 0.929vw, 1.875rem);
 }
