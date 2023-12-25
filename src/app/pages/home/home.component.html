@@ -1,6 +1,11 @@
-<app-menu-bar></app-menu-bar>
 <app-menu-title></app-menu-title>
 <div class="menu-cards">
+  @for (filme of filmes; track $index) {
+  <app-small-card
+    photoCover="{{ filme.photo }}"
+    cardTitle="{{ filme.title }}"
+    id="{{ filme.id }}"
+  ></app-small-card
+  >}
   <app-big-card photoCover="" cardDescription="" cardTitle=""></app-big-card>
-  <app-small-card></app-small-card>
 </div>

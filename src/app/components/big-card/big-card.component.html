@@ -1,4 +1,8 @@
-<div class="big-card">
+<div
+  class="big-card"
+  [routerLink]="['content', id]"
+  routerLinkActive="router-link-active"
+>
   <img src="{{ photoCover }}" alt="" />
 
   <h3>{{ cardTitle }}</h3>
