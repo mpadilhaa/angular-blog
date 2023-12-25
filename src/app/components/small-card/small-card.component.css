@@ -1,0 +1,18 @@
+.small-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 450px;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.small-card img {
+  width: 150px;
+  height: 100px;
+}
+
+.small-card span {
+  font-weight: 700;
+}
